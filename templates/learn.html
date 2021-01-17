@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Machine Learning for Diabetic Screening</title>
+    <link href='/static/styles/main.css' rel='stylesheet'/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- THIS IS THE HEADER -->
+  <div class='header'>
+    <div class='title' ><a href="{{ url_for('index') }}">MLDS</a></div>
+    <div class='headerlinks'>
+      <div class='headerlink'><a href="{{ url_for('ai') }}">About the AI</a></div>
+      <div class='headerlink'><a href="{{ url_for('learn') }}">Learning Resources</a></div>
+    </div>
+  </div>
+
+  <div class='headerspacer'></div>
+
+  <div class='learntitle'><div class='typeunderline'>Learning Resources</div></div>
+<div class='cardcontainers'>
+
+  <div class='titicon'>
+    <img src='/static/prettystuff/weight.svg' class='icon'>
+    <div class='cardtitle'>Body Mass Index</div>
+  </div>
+  <div class='cardbackground'>
+    <div class='cardtext'>Obesity and physical inactivity are two big risk factors when it comes to diabetes. The Body Mass Index is a relatively simple (and cost effective) method of screening for  both factors. It is worth noting that the BMI is not perfect as it does not consider some important variables such as muscle mass or ethnicity.  </div>
+    <div class='cardbutcont'>
+        <div class='cardbutton'>
+          Learn More
+        </div>
+    </div>
+  </div>
+
+
+
+    <div class='titicon'>
+      <img src='/static/prettystuff/age.svg' class='icon'>
+      <div class='cardtitle'>Age</div>
+    </div>
+    <div class='cardbackground'>
+      <div class='cardtext'></div>
+      <div class='cardbutcont'>
+          <div class='cardbutton'>
+            Learn More
+          </div>
+      </div>
+    </div>
+
+
+
+    <div class='titicon'>
+      <img src='/static/prettystuff/glucose.svg' class='icon'>
+      <div class='cardtitle'>Blood Glucose</div>
+    </div>
+    <div class='cardbackground'>
+      <div class='cardtext'>Our model uses your blood glucose (in mg/dL) measured two hours after an oral glucose tolerance test. This test helps identify any abnormalities in the way that your body processes the glucose that you obtain from your daily meals.</div>
+      <div class='cardbutcont'>
+          <div class='cardbutton'>
+            Learn More
+          </div>
+      </div>
+    </div>
+
+
+
+    <div class='titicon'>
+      <img src='/static/prettystuff/pressure.svg' class='icon'>
+      <div class='cardtitle'>Blood Pressure</div>
+    </div>
+    <div class='cardbackground'>
+      <div class='cardtext'>Your diastolic blood pressure (the bottom number) is the pressure present in the arteries when your heart rests in between beats. Diabetes can damage your arteries, causing them to harden in a condition known as atherosclerosis. This has the potential to cause high blood pressure which can lead to more serious conditions such as heart attack and kidney failure if left untreated.</div>
+      <div class='cardbutcont'>
+          <div class='cardbutton'>
+            Learn More
+          </div>
+      </div>
+  </div>
+
+
+</div>

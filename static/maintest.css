@@ -1,0 +1,411 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #CCE4FB;
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #FFFFFF;
+  font-size: 50px;
+  position: fixed;
+  z-index: 999;
+  border: 1px solid #C6C6C6;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.headerspacer{
+  height: 100px;
+}
+
+.home img{
+  width: 100%;
+  filter: brightness(100%);
+  height: 50vh;
+}
+
+.home{
+  position: static;
+        display: inline-block; /* Make the width of box same as image */
+  }
+.home .text{
+  display: flex;
+  flex-direction: column;
+        position: absolute;
+        font-family: 'Open Sans', sans-serif;
+        z-index: 950;
+        margin: 0 auto;
+        left: 0;
+        color: #FFFFFF;
+        right: 0;
+        top: 25%; /* Adjust this value to move the positioned div up and down */
+        text-align: center;
+        width: 60%; /* Set the width of the positioned div */
+        font-size: 1.8em;
+        width: 900px;
+        align-items: center;
+    }
+
+    .datainput{
+      margin-top: 150px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 150px;
+      font-size: 50px;
+      height: auto;
+      border: 1px solid blue;
+    }
+
+    .attribute{
+      position: absolute;
+      top: 50vh;
+      right: 5vw;
+      width: 40%;
+    }
+
+    .formfields{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      background-color: #FF855F;
+      box-shadow: 0px 5.14783px 5.14783px rgba(0, 0, 0, 0.25);
+      border: 1px solid black;
+    }
+
+    .idvatr {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: auto;
+      width: 100%;
+      font-size: 28px;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      color: white;
+    }
+
+    .idvatr1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: auto;
+      width: 100%;
+      font-size: 28px;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 4%;
+      padding-bottom: 1%;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      color: white;
+    }
+
+    .idvatr4 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: auto;
+      width: 100%;
+      font-size: 28px;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 1%;
+      padding-bottom: 4%;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      color: white;
+    }
+
+    .mytext{
+      width: 85px;
+      height: 28px;
+      box-shadow: 0px 5.14783px 5.14783px rgba(0, 0, 0, 0.20);
+      border: none;
+      text-align: center;
+      outline: none;
+    }
+
+    .buttoncontainer{
+      margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 150px;
+      font-size: 50px;
+      height: auto;
+    }
+
+    .riskbutton{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+      font-size: 28px;
+      background-color: #FF855F;
+      font-family: 'Inconsolata', monospace;
+      font-weight:500;
+      padding-top: .5%;
+      padding-bottom: .5%;
+      border: 1px solid black;
+      cursor: pointer;
+      box-shadow: 0px 5.14783px 5.14783px rgba(0, 0, 0, 0.20);
+      color: white;
+
+    }
+
+    .riskbutton:hover{
+      background-color: #ff764d;
+    }
+
+    .riskbutton:active{
+      box-shadow: none;
+      border: 1px solid #BFBFBF;
+    }
+
+    button:active{
+      outline: none;
+    }
+
+    button:focus{
+      outline: none;
+    }
+
+    .hometext{
+      position: absolute;
+      top: 25vh;
+      right: 5vw;
+      width: 40%;
+      font-size: 1.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      text-align: justify;
+    }
+
+    .moreinfobox{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      margin-top: 80px;
+    }
+
+    .moreinfo{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 25%;
+      background-color: #FF855F;
+      height: inherit;
+      margin-left: 5vw;
+      padding-top: 30px;
+      padding-left:30px;
+      padding-right:30px;
+      padding-bottom: 10px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      border: 1px solid black;
+    }
+
+    .infobutton{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      width: 100%;
+      height: 20%;
+      margin-bottom: 20px;
+      font-family: 'Montserrat', sans-serif;
+      padding-top:10px;
+      padding-bottom: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0px 5.14783px 5.14783px rgba(0, 0, 0, 0.20);
+      font-size: 20px;
+    }
+
+    .infobutton:active{
+      box-shadow: none;
+    }
+
+    .percentbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 100px;
+}
+.percentage{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 8%;
+  font-family: 'Inconsolata', monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5vw;
+}
+
+.percentbar{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+  height: 30px;
+}
+
+.backbar{
+  position: relative;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 84%;
+  height: inherit;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.frontbar{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  height: inherit;
+  background-color: #FF855F;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 5;
+  position: absolute;
+}
+
+.percentvalue{
+  z-index: 6;
+  position: absolute;
+  margin-left: 49%;
+  font-family: 'Inconsolata', monospace;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.managerisk{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 200px;
+}
+
+.gotoabout{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: #FF855F;
+  padding-top:10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.gotoabout:hover{
+  cursor: pointer;
+  background-color: #ff764d;
+}
+
+.gotoabout:active{
+  filter: none;
+}
+
+.resultbackground{
+  height: 100vh;
+  width: 100%;
+  background-color: #CCE4FB;
+  /*under here is new line adede */
+}
+
+#myProgress {
+  width: 84%;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: 8%;
+}
+
+#myBar {
+  width: 10%;
+  height: 30px;
+  background-color: #FF855F;
+  text-align: center;
+  line-height: 30px;
+  color: black;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Inconsolata', monospace;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.barcontainer{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.count{
+  display: flex;
+  flex-direction: row;
+  font-family: 'Inconsolata', monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5vw;
+}
