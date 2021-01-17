@@ -16,13 +16,14 @@
   <body>
 
     <!-- THIS IS THE HEADER -->
-  <div class='header'>
-    <div class='title' ><a href="{{ url_for('index') }}">MLDS</a></div>
-    <div class='headerlinks'>
-      <div class='headerlink'><a href="{{ url_for('ai') }}">About the AI</a></div>
-      <div class='headerlink'><a href="{{ url_for('learn') }}">Learning Resources</a></div>
+    <div class='header'>
+      <div class='title' ><a href="{{ url_for('index') }}">MLDS</a>
+        <div class='titledisc'>Machine Learning for Diabetic Screening</div></div>
+      <div class='headerlinks'>
+        <div class='headerlink'><a href="{{ url_for('ai') }}">Behind the AI</a></div>
+        <div class='headerlink'><a href="{{ url_for('learn') }}">Learning Resources</a></div>
+      </div>
     </div>
-  </div>
 
   <div class='headerspacer'></div>
   <div class='home'>
@@ -91,3 +92,5 @@
         <img src='/static/prettystuff/chart.svg' class='chart_svg'>
       </div>
     </div>
+</body>
+</html>
