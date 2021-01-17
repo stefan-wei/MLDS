@@ -17,7 +17,7 @@ def results():
 	age = request.form.get("age")
 	glucose = request.form.get("glucose")
 	bp = request.form.get("bp")
-	classifier = joblib.load("model.pkl")
+	classifier = joblib.load("optimizedmodel.pkl")
 	ptdata = [[glucose, bp, bmi, age]]
 	result = classifier.predict_proba(ptdata)[:,1]
 	result = result[0]
