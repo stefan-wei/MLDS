@@ -2,7 +2,7 @@
 <html lang='en'>
   <head>
     <meta charset='UTF-8'/>
-    <title>{{title}}</title>
+    <title>Your Results</title>
     <link rel='stylesheet' href="/static/styles/main.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;800&display=swap" rel="stylesheet">
@@ -10,9 +10,10 @@
   </head>
   <body onload="move();">
     <div class='header'>
-      <div class='title' ><a href="{{ url_for('index') }}">MLDS</a></div>
+      <div class='title' ><a href="{{ url_for('index') }}">MLDS</a>
+        <div class='titledisc'>Machine Learning for Diabetic Screening</div></div>
       <div class='headerlinks'>
-        <div class='headerlink'><a href="{{ url_for('ai') }}">About the AI</a></div>
+        <div class='headerlink'><a href="{{ url_for('ai') }}">Behind the AI</a></div>
         <div class='headerlink'><a href="{{ url_for('learn') }}">Learning Resources</a></div>
       </div>
     </div>
@@ -89,3 +90,5 @@
       </button>
     </div>
 </div>
+</body>
+</html>
