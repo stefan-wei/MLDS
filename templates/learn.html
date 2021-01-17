@@ -11,9 +11,10 @@
 
     <!-- THIS IS THE HEADER -->
   <div class='header'>
-    <div class='title' ><a href="{{ url_for('index') }}">MLDS</a></div>
+    <div class='title' ><a href="{{ url_for('index') }}">MLDS</a>
+      <div class='titledisc'>Machine Learning for Diabetic Screening</div></div>
     <div class='headerlinks'>
-      <div class='headerlink'><a href="{{ url_for('ai') }}">About the AI</a></div>
+      <div class='headerlink'><a href="{{ url_for('ai') }}">Behind the AI</a></div>
       <div class='headerlink'><a href="{{ url_for('learn') }}">Learning Resources</a></div>
     </div>
   </div>
@@ -28,14 +29,13 @@
     <div class='cardtitle'>Body Mass Index</div>
   </div>
   <div class='cardbackground'>
-    <div class='cardtext'>Obesity and physical inactivity are two big risk factors when it comes to diabetes. The Body Mass Index is a relatively simple (and cost effective) method of screening for  both factors. It is worth noting that the BMI is not perfect as it does not consider some important variables such as muscle mass or ethnicity.  </div>
+    <div class='cardtext'>Obesity and physical inactivity are two big risk factors when it comes to diabetes. The Body Mass Index is a relatively simple (and cost effective) method of screening for  both factors. An abnormally high BMI can be lowered through a change in diet and exercise. It is worth noting that the BMI is not perfect as it does not consider some important variables such as muscle mass or ethnicity.  </div>
     <div class='cardbutcont'>
-        <div class='cardbutton'>
-          Learn More
-        </div>
+      <button type="button" class='cardbutton'>
+        <a href='https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html'>Learn More</a>
+      </button>
     </div>
   </div>
-
 
 
     <div class='titicon'>
@@ -43,11 +43,11 @@
       <div class='cardtitle'>Age</div>
     </div>
     <div class='cardbackground'>
-      <div class='cardtext'></div>
+      <div class='cardtext'>Age is another important factor when assessing Type 2 diabetic risk. By acknowledging your risk at a younger age, one can begin altering their lifestyle and even stop diabetes from developing. With older age, it also becomes more difficult to live with the complications that come with diabetes. Nerve damage, eye complications, and cardiovascular diseases are a few examples.</div>
       <div class='cardbutcont'>
-          <div class='cardbutton'>
-            Learn More
-          </div>
+          <button type="button" class='cardbutton'>
+            <a href='https://care.diabetesjournals.org/content/35/12/2650'>Learn More</a>
+          </button>
       </div>
     </div>
 
@@ -58,11 +58,11 @@
       <div class='cardtitle'>Blood Glucose</div>
     </div>
     <div class='cardbackground'>
-      <div class='cardtext'>Our model uses your blood glucose (in mg/dL) measured two hours after an oral glucose tolerance test. This test helps identify any abnormalities in the way that your body processes the glucose that you obtain from your daily meals.</div>
+      <div class='cardtext'>Our model uses your blood glucose (in mg/dL) measured two hours after an oral glucose tolerance test. This test helps identify any abnormalities in the way that your body processes the glucose that you obtain from your daily meals. Abnormally high blood sugar can be treated with exercise, a healthy diet, and medications.</div>
       <div class='cardbutcont'>
-          <div class='cardbutton'>
-            Learn More
-          </div>
+        <button type="button" class='cardbutton'>
+          <a href='https://www.mayoclinic.org/diseases-conditions/diabetes/diagnosis-treatment/drc-20371451'>Learn More</a>
+        </button>
       </div>
     </div>
 
@@ -73,13 +73,15 @@
       <div class='cardtitle'>Blood Pressure</div>
     </div>
     <div class='cardbackground'>
-      <div class='cardtext'>Your diastolic blood pressure (the bottom number) is the pressure present in the arteries when your heart rests in between beats. Diabetes can damage your arteries, causing them to harden in a condition known as atherosclerosis. This has the potential to cause high blood pressure which can lead to more serious conditions such as heart attack and kidney failure if left untreated.</div>
+      <div class='cardtext'>Your diastolic blood pressure (the bottom number) is the pressure present in the arteries when your heart rests in between beats. Diabetes can damage your arteries, causing them to harden in a condition known as atherosclerosis. This has the potential to cause high blood pressure which can lead to more serious conditions such as heart attack and kidney failure if left untreated. To manage high blood pressure, make sure that you avoid a high sodium diet while also following the treatment listed above.</div>
       <div class='cardbutcont'>
-          <div class='cardbutton'>
-            Learn More
-          </div>
+        <button type="button" class='cardbutton'>
+          <a href='https://www.hopkinsmedicine.org/health/conditions-and-diseases/diabetes/diabetes-and-high-blood-pressure'>Learn More</a>
+        </button>
       </div>
   </div>
 
 
 </div>
+</body>
+</html>
