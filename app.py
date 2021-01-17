@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
-import sklearn
-import joblib
+from joblib import load
 
 
 app = Flask(__name__)
