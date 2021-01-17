@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Machine Learning for Diabetic Screening</title>
+    <link href='/static/styles/main.css' rel='stylesheet'/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  </head>
+  <style>
+  body {
+    background-color: white;
+  }
+</style>
+</head>
+  <body>
+
+    <!-- THIS IS THE HEADER -->
+  <div class='header'>
+    <div class='title' ><a href="{{ url_for('index') }}">MLDS</a></div>
+    <div class='headerlinks'>
+      <div class='headerlink'><a href="{{ url_for('ai') }}">About the AI</a></div>
+      <div class='headerlink'><a href="{{ url_for('learn') }}">Learning Resources</a></div>
+    </div>
+  </div>
+
+  <div class='headerspacer'></div>
+  <div class='home'>
+  <img id="img1" src="/static/prettystuff/newinsulin1.jpg" alt=""/>
+</div>
+
+    <div class='hometext'>
+      In 2018, 34.2 million Americans, or 10.5% of the population, had diabetes. Of the 34.2 million adults with diabetes, 26.8 million were diagnosed, and 7.3 million were undiagnosed.</br></br></br>
+      When left untreated, diabetes can lead to severe complications...
+    </div>
+
+    <div class='firstbox'>
+      <div class='diabetetitle'>The Three Types of Diabetes</div>
+      <div class='typecontainers'>
+
+        <div class='types'>
+          <div class='nonimage'>
+          <div class='typetitle'><div class='typeunderline'>Type 1</div></div>
+          <div class='typedisc'>Autoimmune Disease</div>
+          <div class='typetext'>Body attacks and destroys over 90% of its own inuslin producing beta cells.</div></div>
+          <div class='image'><div class='iconcont'><img src='/static/prettystuff/antibody.svg' class='typeimg'></div></div>
+        </div>
+        <div class='types'>
+          <div class='nonimage'>
+          <div class='typetitle'><div class='typeunderline'>Type 2</div></div>
+          <div class='typedisc'>Lifestyle Dependent</div>
+          <div class='typetext'>Obesity and lifestyle lead to the development of insulin resistance.</div></div>
+          <div class='image'><div class='iconcont'><img src='/static/prettystuff/healthy.svg' class='typeimg'></div></div>
+        </div>
+        <div class='types'>
+          <div class='nonimage'>
+          <div class='typetitle'><div class='typeunderline'>MODY</div></div>
+          <div class='typedisc'>Genetic Mutation</div>
+          <div class='typetext'>Single mutation impacts body’s ability to produce insulin.</div></div>
+          <div class='image'><div class='iconcont'><img src='/static/prettystuff/dna.svg' class='typeimg'></div></div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class='secondbox'>
+      <div class='modelintro'>
+        <div class='modeltitle'><div class='typeunderlinew'>Diabetes Prevention and Screening</div></div>
+        <div class='modelp'>Unlike type 1 diabetes and MODY, type 2 diabetes can be delayed or even prevented with lifestyle changes if caught early enough.</div><br>
+        <div class='modelp'>With this in mind, we have created a machine learning model to screen for diabetes by predicting your risk for diabetes based on certain body parameters that have a proven correlation with diabetes.</div><br>
+        <div class='modelp'>What’s your risk?</div>
+      </div>
+      <img src='/static/prettystuff/lowerheatmap.png' class='correlationgraph'>
+    </div>
+
+    <div class='thirdbox'>
+      <form action="/results" method="POST" autocomplete="off">
+          <div class='attribute'>
+            <div class='formfields'>
+            <div class='idvatr1'>Your BMI: <input type="text" id="bmi" name="bmi" class="mytext" /> </div>
+            <div class='idvatr'>Your Current Age: <input type="text" id="age" name="age" class="mytext" /> </div>
+            <div class='idvatr'>Your Glucose Level: <input type="text" id="glucose" name="glucose" class="mytext" placeholder = "mg/dL"/> </div>
+            <div class='idvatr4'>Your Diastolic Blood Pressure: <input type="text" id="bp" name="bp" class="mytext" /> </div></div>
+          <div class ='buttoncontainer'>
+            <button type='submit' class='riskbutton' name='riskbutton' id='riskbutton'> Calculate My Risk </button>
+          </div>
+        </div>
+      </form>
+      <div class='svgcontainer'>
+        <img src='/static/prettystuff/chart.svg' class='chart_svg'>
+      </div>
+    </div>
