@@ -34,14 +34,24 @@ a{
 }
 
 .title{
-  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: flex-start;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.titledisc{
+  font-size: 1rem;
 }
 .headerlinks{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .headerlink{
@@ -164,18 +174,18 @@ a{
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      width: 40%;
+      width: 45%;
       font-size: 28px;
       background-color: #FF855F;
       font-family: 'Inconsolata', monospace;
       font-weight:500;
       padding-top: .5%;
       padding-bottom: .5%;
-      border: 1px solid black;
+      border: none;
       cursor: pointer;
       box-shadow: 0px 5.14783px 5.14783px rgba(0, 0, 0, 0.20);
       color: white;
-
+      border-radius: 10px;
     }
 
     .riskbutton:hover{
@@ -200,7 +210,7 @@ a{
       top: 40vh;
       right: 5vw;
       width: 40%;
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-family: 'Montserrat', sans-serif;
       font-weight: 500;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -344,7 +354,6 @@ a{
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   font-weight: 500;
-  border: 1px solid black;
   border-radius: 15px;
   background-color: #FF855F;
   padding-top:10px;
@@ -352,15 +361,18 @@ a{
   padding-left: 20px;
   padding-right: 20px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: none;
 }
 
 .gotoabout:hover{
   cursor: pointer;
   background-color: #ff764d;
+  border: none;
 }
 
 .gotoabout:active{
   filter: none;
+  border: none;
 }
 
 .resultbackground{
@@ -417,12 +429,13 @@ a{
   font-family: 'Montserrat', sans-serif;
   margin-top: 75px;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 100px;
 }
 
 .aititle{
   border-bottom: 2px solid black;
+  font-weight: 500;
 }
 .ai_introduction{
   display: flex;
@@ -475,6 +488,7 @@ a{
   font-family: 'Montserrat', sans-serif;
   font-size: 3.5vh;
   text-align: justify;
+  font-weight: 400;
 }
 
 .firstbox{
@@ -497,7 +511,7 @@ a{
   font-family: 'Montserrat', sans-serif;
   font-weight:500;
   font-size: 3rem;
-  margin-top: 150px;
+  margin-top: 5%;
 }
 
 .typecontainers{
@@ -529,7 +543,7 @@ a{
   align-content: center;
   font-family: 'Montserrat', sans-serif;
   font-weight:500;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 50px;
 }
 
@@ -550,7 +564,7 @@ a{
   align-content: center;
   font-family: 'Montserrat', sans-serif;
   font-weight:600;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin-bottom: 25px;
 
 }
@@ -586,7 +600,6 @@ a{
   background-color: #737F8C;
   height: 100vh;
   padding: 5%;
-  padding-left: 2.5%;
 }
 
 .modelintro{
@@ -594,7 +607,7 @@ a{
   flex-direction: column;
   justify-content: flex-start;
   align-content: center;
-  width: 50vw;
+  width: 40vw;
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-weight:600;
@@ -603,28 +616,27 @@ a{
 
 .modeltitle{
   font-weight:600;
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   margin-bottom: 50px;
-  margin-top: 50px;
 }
 
 .modelp{
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: justify;
 }
 
 .modelp:last-of-type{
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: justify;
-  margin-top: 50px;
 }
 
 .correlationgraph{
-  width: 600px;
-  height: 600px;
+  width: 40vw;
+  height: 70vh;
   border: 1px solid white;
+  border-radius: 15px;
   margin-top: 60px;
   background-color: white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -651,8 +663,9 @@ a{
   height: auto;
   background-color: #FF855F;
   box-shadow: 0px 5.14783px 5.14783px rgba(0, 0, 0, 0.25);
-  border: 1px solid black;
+  border: 1px solid #F07E5A;
   width: 50vw;
+  border-radius: 15px;
 }
 
 .idvatr {
@@ -739,7 +752,7 @@ a{
   font-weight:500;
   padding-top: .5%;
   padding-bottom: .5%;
-  border: 1px solid black;
+  border: 1px solid #F07E5A;
   cursor: pointer;
   box-shadow: 0px 5.14783px 5.14783px rgba(0, 0, 0, 0.20);
   color: white;
@@ -752,7 +765,7 @@ a{
 
 .riskbutton:active{
   box-shadow: none;
-  border: 1px solid #BFBFBF;
+  border: 1px solid #F07E5A;
 }
 
 button:active{
@@ -814,6 +827,7 @@ button:focus{
 .icon{
   width: 7.5vw;
   margin: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .maincard{
   display: flex;
@@ -844,7 +858,7 @@ button:focus{
   justify-content: flex-start;
   align-items: flex-end;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 2rem;
   padding-bottom: 10px;
   height: 100px;
@@ -861,11 +875,12 @@ button:focus{
   width: 50%;
   padding: 40px;
   margin-bottom: 100px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .cardtext{
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 2rem;
   text-align: justify;
 }
@@ -892,4 +907,18 @@ button:focus{
   padding-top:10px;
   padding-bottom: 10px;
   margin-top: 40px;
+  box-shadow: 0px 5.14783px 5.14783px rgba(0, 0, 0, 0.20);
+  border: none;
+}
+
+.cardbutton:active{
+  box-shadow: none;
+}
+
+button:active{
+  outline: none;
+}
+
+button:focus{
+  outline: none;
 }
