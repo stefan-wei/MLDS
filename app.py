@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from joblib import load
+from pickle
 
 
 app = Flask(__name__)
@@ -17,9 +17,11 @@ def results():
 	age = request.form.get("age")
 	glucose = request.form.get("glucose")
 	bp = request.form.get("bp")
-	classifier = joblib.load("optimizedmodel.pkl")
+	Pkl_Filename = "newmodel.pkl"
+	with open(Pkl_Filename, 'rb') as file:
+	    model = pickle.load(file)
 	ptdata = [[glucose, bp, bmi, age]]
-	result = classifier.predict_proba(ptdata)[:,1]
+	result = model.predict_proba(ptdata)[:,1]
 	result = result[0]
 	result = result * 100
 	float_str = float(result)
