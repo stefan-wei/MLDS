@@ -284,7 +284,7 @@ a{
   justify-content: flex-start;
   align-items: flex-start;
   margin-left: 8%;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2.5vw;
@@ -327,15 +327,6 @@ a{
   position: absolute;
 }
 
-.percentvalue{
-  z-index: 6;
-  position: absolute;
-  margin-left: 49%;
-  font-family: 'Inconsolata', monospace;
-  font-size: 30px;
-  font-weight: 600;
-}
-
 .managerisk{
   display:flex;
   flex-direction: row;
@@ -366,7 +357,6 @@ a{
 
 .gotoabout:hover{
   cursor: pointer;
-  background-color: #ff764d;
   border: none;
 }
 
@@ -399,9 +389,13 @@ a{
   color: black;
   border-radius: 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Montserrat', sans-serif;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 500;
+}
+
+#value {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .barcontainer{
@@ -415,7 +409,7 @@ a{
 .count{
   display: flex;
   flex-direction: row;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2.5vw;
@@ -748,7 +742,7 @@ a{
   width: 40%;
   font-size: 28px;
   background-color: #FF855F;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Montserrat', sans-serif;
   font-weight:500;
   padding-top: .5%;
   padding-bottom: .5%;
