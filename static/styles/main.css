@@ -72,139 +72,6 @@ a{
         display: inline-block; /* Make the width of box same as image */
   }
 
-
-    .datainput{
-      margin-top: 150px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 150px;
-      font-size: 50px;
-      height: auto;
-      border: 1px solid blue;
-    }
-
-    .formfields{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: auto;
-      background-color: #FF855F;
-      box-shadow: 0px 5.14783px 5.14783px rgba(0, 0, 0, 0.25);
-      border: 1px solid black;
-    }
-
-    .idvatr {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      height: auto;
-      width: 100%;
-      font-size: 1.5rem;
-      padding-left: 5%;
-      padding-right: 5%;
-      padding-top: 2%;
-      padding-bottom: 2%;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 500;
-      color: white;
-    }
-
-    .idvatr1 {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      height: auto;
-      width: 100%;
-      font-size: 1.5rem;
-      padding-left: 5%;
-      padding-right: 5%;
-      padding-top: 4%;
-      padding-bottom: 1%;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 500;
-      color: white;
-    }
-
-    .idvatr4 {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      height: auto;
-      width: 100%;
-      font-size: 1.5rem;
-      padding-left: 5%;
-      padding-right: 5%;
-      padding-top: 1%;
-      padding-bottom: 4%;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 500;
-      color: white;
-    }
-
-    .mytext{
-      width: 85px;
-      height: 28px;
-      box-shadow: 0px 5.14783px 5.14783px rgba(0, 0, 0, 0.20);
-      border: none;
-      text-align: center;
-      outline: none;
-    }
-
-    .buttoncontainer{
-      margin-top: 50px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 150px;
-      font-size: 50px;
-      height: auto;
-    }
-
-    .riskbutton{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: 45%;
-      font-size: 28px;
-      background-color: #FF855F;
-      font-family: 'Inconsolata', monospace;
-      font-weight:500;
-      padding-top: .5%;
-      padding-bottom: .5%;
-      border: none;
-      cursor: pointer;
-      box-shadow: 0px 5.14783px 5.14783px rgba(0, 0, 0, 0.20);
-      color: white;
-      border-radius: 10px;
-    }
-
-    .riskbutton:hover{
-      background-color: #ff764d;
-    }
-
-    .riskbutton:active{
-      box-shadow: none;
-      border: 1px solid #BFBFBF;
-    }
-
-    button:active{
-      outline: none;
-    }
-
-    button:focus{
-      outline: none;
-    }
-
     .hometext{
       position: absolute;
       top: 40vh;
@@ -218,59 +85,7 @@ a{
       color: white;
     }
 
-    .moreinfobox{
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      width: 100%;
-      height: auto;
-      margin-top: 80px;
-      margin-bottom: 80px;
-    }
-
-    .moreinfo{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 25%;
-      background-color: #FF855F;
-      height: inherit;
-      margin-left: 5vw;
-      padding-top: 30px;
-      padding-left:30px;
-      padding-right:30px;
-      padding-bottom: 10px;
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-      border: 1px solid black;
-    }
-
-    .infobutton{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      background-color: white;
-      width: 100%;
-      height: 20%;
-      margin-bottom: 20px;
-      font-family: 'Montserrat', sans-serif;
-      padding-top:10px;
-      padding-bottom: 10px;
-      font-weight: 600;
-      cursor: pointer;
-      border: none;
-      border-radius: 5px;
-      box-shadow: 0px 5.14783px 5.14783px rgba(0, 0, 0, 0.20);
-      font-size: 20px;
-    }
-
-    .infobutton:active{
-      box-shadow: none;
-    }
-
-    .percentbox{
+.percentbox{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -288,43 +103,6 @@ a{
   font-style: normal;
   font-weight: 400;
   font-size: 2.5vw;
-}
-
-.percentbar{
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 100px;
-  height: 30px;
-}
-
-.backbar{
-  position: relative;
-  display:flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  width: 84%;
-  height: inherit;
-  background-color: #FFFFFF;
-  border-radius: 15px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.frontbar{
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 65%;
-  height: inherit;
-  background-color: #FF855F;
-  border-radius: 15px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  z-index: 5;
-  position: absolute;
 }
 
 .managerisk{
@@ -365,12 +143,6 @@ a{
   border: none;
 }
 
-.resultbackground{
-  height: 100vh;
-  width: 100%;
-  background-color: #CCE4FB;
-  /*under here is new line adede */
-}
 
 #myProgress {
   width: 84%;
